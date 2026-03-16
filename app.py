@@ -17,12 +17,12 @@ with open("irisflower.pkl", "rb") as file:
     model = pickle.load(file)
 
 # App Title
-st.title("🌸 Iris Flower Classifier Dashboard")
+st.title(" Iris Flower Classifier Dashboard")
 
 # Tabs
 tab1, tab2, tab3 = st.tabs(["🔮 Prediction", "📊 Performance", "📂 Dataset Info"])
 
-# ---------------- Prediction Tab ----------------
+#  Prediction Tab 
 with tab1:
     st.header("Enter Measurements")
     sepal_length = st.number_input("Sepal Length (cm)", 0.0, 10.0, 5.1)
