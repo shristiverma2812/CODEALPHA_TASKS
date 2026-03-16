@@ -45,7 +45,7 @@ with tab1:
         prob_df = pd.DataFrame(model.predict_proba(input_df), columns=y_class_names)
         st.bar_chart(prob_df.T)
 
-# ---------------- Performance Tab ----------------
+# Performance Tab
 with tab2:
     st.header("Model Performance")
 
@@ -68,7 +68,7 @@ with tab2:
                                    output_dict=True)
     st.write(pd.DataFrame(report).transpose())
 
-# ---------------- Dataset Info Tab ----------------
+#  Dataset Info Tab 
 with tab3:
     st.header("Dataset Overview")
     st.write("This app uses the classic Iris dataset with 150 samples and 3 flower classes.")
